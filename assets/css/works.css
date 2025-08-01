@@ -275,7 +275,7 @@ works ui design
 }
 @media screen and (max-width:768px) {
     main {
-        grid-template-rows: 14vh auto;
+        grid-template-rows: 15vh auto;
         height: 100vh;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -283,12 +283,9 @@ works ui design
     .topPage {
         left: 20px;
     }
-    .topPage img {
-        width: 5rem;
-    }
     .worksAll {
         padding: 0 20px 40px 20px;
-        height: 32%;
+        height: 65vh;
     }
     .gallery {
         grid-template-columns: 1fr;
@@ -297,7 +294,7 @@ works ui design
         font-size: 1.2rem;
     }
     .cloud-png {
-        height: 6rem;
+        height: 10vh;
     }
     .home {
         display: block;
@@ -326,7 +323,8 @@ works ui design
     }
     .gif img {
         position: static;
-        width: 10rem;
+        width: auto;
+        height: 20vh;
     }
     .modal-inner {
         width: 90%;

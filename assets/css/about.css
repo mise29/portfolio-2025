@@ -166,6 +166,7 @@ main {
     border: none;
     background: none;
     display: none;
+    z-index: 990;
 }
 .menuButton i {
     font-size: 1.6rem;
@@ -232,7 +233,7 @@ main {
 }
 @media screen and (max-width:768px) {
     main {
-        grid-template-rows: 14vh auto;
+        grid-template-rows: 15vh auto;
         height: 100vh;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -245,16 +246,16 @@ main {
     }
     .worksAll {
         padding: 0 20px 40px 20px;
-        height: 30%;
+        height: 65vh;
     }
     .cloud-png {
-        height: 6rem;
+        height: 10vh;
     }
     .home {
         display: block;
     }
     .about-profile  {
-        padding: 28px 0;
+        padding: 0;
     }
     .about-profile h2 {
         font-size: 1.4rem;
@@ -262,20 +263,26 @@ main {
     .about-profile span {
         font-size: 0.88rem;
     }
+    .about-profile .summary {
+    font-size: .8rem;
+    }
     .my-name {
         font-size: 1rem;
     }
     .my-name span {
         font-size: 0.88rem;
     }
-    .cando-heading {
-        font-size: 1.14rem;
+    .cando-heading,
+    .content-heading {
+        font-size: 1rem;
     }
     .cando h5 {
-        font-size: 1.12rem;
-    }
-    .cando p {
         font-size: 1rem;
+    }
+    .cando p,
+    .tools-list li,
+    .hobby-list li {
+        font-size: .8rem;
     }
     .navigation {
         display: none;
@@ -301,7 +308,8 @@ main {
     }
     .gif img {
         position: static;
-        width: 10rem;
+        width: auto;
+        height: 20vh;
     }
     .modal-inner {
         width: 90%;

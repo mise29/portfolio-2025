@@ -227,6 +227,7 @@ works ui design
     border: none;
     background: none;
     display: none;
+    z-index: 990;
 }
 .menuButton i {
     font-size: 1.6rem;
@@ -287,7 +288,7 @@ works ui design
 }
 @media screen and (max-width:768px) {
     main {
-        grid-template-rows: 18vh auto;
+        grid-template-rows: 15vh auto;
         height: 100vh;
         overflow-x: hidden;
         overflow-y: hidden;
@@ -295,15 +296,12 @@ works ui design
     .topPage {
         left: 20px;
     }
-    .topPage img {
-        width: 5rem;
-    }
     .worksAll {
         padding: 0 20px 40px 20px;
-        height: 38%;
+        height: 65vh;
     }
     .cloud-png {
-        height: 6rem;
+        height: 10vh;
     }
     .home {
         display: block;
@@ -329,10 +327,12 @@ works ui design
     }
     .gif {
         text-align: right;
+        width: 100%;
     }
     .gif img {
         position: static;
-        width: 10rem;
+        width: auto;
+        height: 20vh;
     }
     .modal-inner {
         width: 90%;
