@@ -48,6 +48,10 @@ $(function() {
         $(".menuButton").show();
         $(".closeButton").hide();
     });
+
+    $(".bird-tap").on("click", function() {
+        $(".fukidashi-gif").fadeToggle();
+    });
 });
 
 $(function() {

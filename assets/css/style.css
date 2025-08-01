@@ -218,9 +218,10 @@ works ui design
 }
 .menuButton,
 .closeButton {
-    margin: 10px 0;
-    width: 4rem;
-    height: 4rem;
+    margin: 20px;
+    padding: 5px;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
     top: 0;
     right: 0;
@@ -228,13 +229,16 @@ works ui design
     background: none;
     display: none;
     z-index: 990;
+    background-color: #F4C0C2;
+    border-radius: 20px;
 }
 .menuButton i {
-    font-size: 1.6rem;
-    color: #333;
+    font-size: 1rem;
+    color: #fff;
 }
 .closeButton i {
-    font-size: 1.8rem;
+    font-size: 1.12rem;
+    color: #fff;
 }
 .menu-items {
     text-align: center;
@@ -268,11 +272,57 @@ works ui design
     bottom: 0;
     right: 0;
     width: 19rem;
+    cursor: pointer;
 }
-
+.gif img:hover {
+    transform: scale(1.05);
+}
+/* -----
+gif fukidashi
+----- */
+    .fukidashi-gif {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        transform: translate(0%, 50%);
+    }
+    .fukidashi-gif p {
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    .fukidashi-git > .ornament {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+    .fukidashi-gif > .ornament::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    width: 110px;
+    height: 1px;
+    transform: rotate(-10deg);
+    box-sizing: border-box;
+    background-color: #fff;
+    }
+    .fukidashi-gif > .ornament::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+    width: 110px;
+    height: 1px;
+    transform: rotate(10deg);
+    box-sizing: border-box;
+    background-color: #fff;
+}
 @media screen and (max-width:1200px) {
     .gif img {
-    width: 17rem;
+        width: 17rem;
     }
 }
 @media screen and (max-width:1000px) {
@@ -295,6 +345,9 @@ works ui design
     }
     .topPage {
         left: 20px;
+    }
+    .topPage a {
+        font-size: 1rem;
     }
     .worksAll {
         padding: 0 20px 40px 20px;
@@ -348,6 +401,29 @@ works ui design
     .modal-inner p {
         font-size: .88rem;
     }
+
+    /* -----
+    gif fukidashi
+    ----- */
+    .fukidashi-gif {
+        right: 200px;
+    }
+    .fukidashi-gif > .ornament::before {
+    top: -10px;
+    left: 110px;
+    width: 60px;
+    height: 1px;
+    transform: rotate(10deg);
+    }
+    .fukidashi-gif > .ornament::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 110px;
+    width: 60px;
+    height: 1px;
+    transform: rotate(-10deg);
+}
 }
 
 /* -----
