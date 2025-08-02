@@ -14,6 +14,7 @@ $(function() {
             display: "block",
             margin: "28px 0",
             borderRadius: "10px",
+            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)"
         });
 
         $("#modal").fadeIn();
